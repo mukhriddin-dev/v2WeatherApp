@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+main{
+    background-image: url(./train-g0f035e94b_1920.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+main .main-l{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.507);
+    color: white;
+}
+
+main .main-r{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.103);
+}
+
+main .main-l .count-name{
+position: relative;
+font-size: 55px;
+}
+
+main .main-l  .date{
+   position: relative;
+   left:-4rem;
+   font-size: 18px;
+}
+
+main .main-l .temp{
+    font-size: 9rem;
+    margin: 2rem;
+    text-shadow: 2px 2px 1px silver;
+}
+
+main .main-l .temp span{
+    font-size: 6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main .main-l .weat{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+
+main .main-l .weat-type{
+    font-size: 18px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+main .main-r input{
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.568);
+    width: 280px;
+    height: 50px;
+    padding: 4px 12px;
+    font-size: 24px;
+    border-bottom: 4px solid rgb(231, 108, 108);
+    transition: 0.2s ease;
+    border-radius:15px 0 15px 0 ;
+}
+
+main .main-r input:focus{
+    background: rgba(255, 255, 255, 0.349);
+    border-bottom: 4px solid rgb(255, 73, 73);
+}
+
+
+::placeholder{
+    color: rgb(0, 8, 83);
+}
+
+
+@media only screen and (max-width:576px){
+
+    main{
+        background-image: url(./train-g0f035e94b_1920.jpg);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main .main-l{
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(87, 87, 87, 0.507);
+        color: white;
+    }
+    
+    main .main-r{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(37, 37, 37, 0.568);
+    }
+    
+    main .main-l .count-name{
+    position: relative;
+    font-size: 55px;
+    }
+    
+    main .main-l  .date{
+       position: relative;
+       left:-4rem;
+       font-size: 18px;
+    }
+    
+    main .main-l .temp{
+        font-size: 9rem;
+        margin: 2rem;
+        text-shadow: 2px 2px 1px silver;
+    }
+    
+    main .main-l .temp span{
+        font-size: 6rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    main .main-l .weat{
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    
+    
+    main .main-l .weat-type{
+        font-size: 18px;
+        text-transform: uppercase;
+        word-spacing: 10px;
+    }
+    
+    main .main-r input{
+        border: none;
+        outline: none;
+        background: rgba(255, 255, 255, 0.568);
+        width: 280px;
+        height: 50px;
+        padding: 4px 12px;
+        font-size: 24px;
+        border-bottom: 3px solid rgb(231, 108, 108);
+        transition: 0.2s ease;
+        border-radius:7px ;
+    }
+    
+    main .main-r input:focus{
+        background: rgba(255, 255, 255, 0.349);
+        border-bottom: 4px solid rgb(255, 73, 73);
+    }
+    
+    
+    ::placeholder{
+        color: rgb(0, 8, 83);
+    }
+
+}
+
+
