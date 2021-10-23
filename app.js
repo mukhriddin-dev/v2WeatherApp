@@ -41,6 +41,23 @@ function displayWiev(weather) {
   let x = dt.getDate();
   let y = dt.getFullYear();
   let z = dt.getMonth();
+
+  const mainBack=document.querySelector("main");
+  `${weather.weather[0].main}`
+if(`${weather.weather[0].main}`=='Clear'){
+ mainBack.style.backgroundImage=`url(./img/clear.jpg)`;
+}else if(`${weather.weather[0].main}`=='Rain'){
+  mainBack.style.backgroundImage=`url(./img/rain.jpg)`; 
+}else if(`${weather.weather[0].main}`=='Clouds'){
+  mainBack.style.backgroundImage=`url(./img/cloud.jpg)`; 
+}else if(`${weather.weather[0].main}`=='Fog'){
+  mainBack.style.backgroundImage=`url(./img/fog.jpg)`; 
+}else{
+  mainBack.style.backgroundImage=`url(./clodd.jpg)`; 
+}
+
+
+
   const months = [
     "January",
     "February",
@@ -56,4 +73,6 @@ function displayWiev(weather) {
     "December",
   ];
   date.innerHTML = ` ${x} , ${months[z]} , ${y}`;
+
+
 }
